@@ -1,0 +1,310 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    max-width: 100%;
+    max-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+section{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+
+/* NAV */
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+}
+.nav-bar{
+    width: 80%;
+} 
+.brand-container{
+    display: flex;
+    align-items: center;
+    padding: 5% 0px ;
+} 
+#logo{
+    width: 64px;
+    height: 64px;
+}
+#logo-name{
+    padding-left: 2%;
+    font-size: 1.5rem;
+}
+
+
+
+/* SOCIAL */
+#social{
+    z-index: 200;
+    display: flex;
+    position: fixed;
+    bottom: 30px;
+    width: 20%;
+    left: 10%;
+}
+#social>ion-icon{
+    font-size: 30px;
+    padding-right: 8%;
+}
+
+
+
+/* INICIO */
+#inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../resources/dog-dark-cut.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#inicio>.container-fluid>.row {
+    width: 80%;
+    display: flex;
+    margin: 0px auto;
+}
+#inicio .col-12>h2{
+    text-transform: uppercase;
+    font-size: 64px;
+    font-weight: 800;
+}
+#inicio .col-12>p{
+    font-weight: 500;
+    padding-top: 30px;
+    font-size: 32px;
+}
+
+
+
+/* CARACTERISTICAS */
+#caracteristicas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../resources/dog-champion-dark.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#caracteristicas>.container-fluid>.row {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+}
+#caracteristicas .col-3{
+    padding:0px;
+}
+.cardBody{
+    text-align: center;
+    width: auto;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.cardTitle{
+    padding-top: 4%;
+    text-transform: uppercase;
+    font-size: 50px;
+    --ionicon-stroke-width: 42px;
+}
+.cardTitle>h3{
+    font-weight: 700;
+    font-size: 30px;
+}
+.cardText{
+    margin: 0px auto;
+    width: 80%;
+    padding-top: 4%;
+    font-size: 24px;
+    font-weight: 400;
+}
+.cardText>p{
+    margin: 0px;
+}
+/* DESCARGAS */
+#descargas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../resources/descargas-bg-circle.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#descargas>.container-fluid>.row {
+    width: 80%;
+    display: flex;
+    margin: 0px auto;
+}
+#descargas h2{
+    text-transform: uppercase;
+    font-size: 64px;
+    font-weight: 800;
+}
+
+.img-appstore img{
+    display: block;
+    padding-top: 6%;
+    width: 50%;
+}
+#mobile-img{
+    width: 60%;
+}
+
+
+/* UTILS */
+.cyan{
+    color: #56D4DC;
+}
+.red{
+    color: #f02d3a;
+}
+.yellow{
+    color: #FFED8D;   
+}
+.pink{
+    color: #CB77FF;
+}
+.col-12{
+    padding:0px;
+}
+
+/* QUERY */
+@media (min-width:315px) and (max-width:768px){
+    /* LOGO */
+    #logo{
+        width: 50px;
+        height: 50px;
+    }
+    /* INICIO */
+    #inicio{
+        background-position: top center;
+    }
+
+    #inicio .col-12>h2{
+        font-size: 44px;
+    }
+    #inicio .col-12>p{
+        font-size: 24px;
+    }
+
+
+    /* CARACTERISTICAS */
+    #caracteristicas{
+        background-position: top center;
+    }
+    /* CARD */
+    .cardBody{
+        margin-bottom: 2%;
+        width: auto;
+        height: auto;
+    }
+    .cardTitle{
+        padding-top: 2%;
+        font-size: 30px;
+    }
+    .cardTitle>h3{
+        font-size: 20px;
+    }
+    .cardText{
+        font-size: 16px;
+        padding:0px 0px 2% 0px; 
+    }
+
+    /* DESCARGAS */
+    #descargas{
+        background-position: top center;
+        background-image: url('../resources/cat-bg-mobile.jpg');
+    }
+    #descargas h2{
+        font-size: 50px;
+    }
+    .img-appstore img{
+        width: 30%;
+        padding-top: 10%;
+    }
+    #mobile-img{
+        display: none;
+    }
+    
+    /* SOCIAL */
+    #social>ion-icon{
+        font-size: 50px;
+    }
+}
+
+@media(min-width:769px) and (max-width:992px) {
+    /* INICIO */
+    #inicio .col-12>h2{
+        font-size: 50px;
+    }
+    #inicio .col-12>p{
+        font-size: 30px;
+    }
+    /* DESCARGAS */
+    #descargas{
+        background-image: url('../resources/cat-bg-mobile.jpg');
+    }
+    #mobile-img{
+        display: none;
+    }
+        /* CARD */
+    .cardBody{
+        margin-bottom: 2%;
+        width: auto;
+        height: auto;
+    }
+    .cardTitle{
+        padding-top: 2%;
+        font-size: 30px;
+    }
+    .cardTitle>h3{
+        font-size: 20px;
+    }
+    .cardText{
+        font-size: 16px;
+        padding:0px 0px 2% 0px; 
+    }
+}
+
+@media(min-width:993px){
+    #caracteristicas>.container-fluid>.row {
+        justify-content: space-between;
+    }
+    .cardBody{
+        width: auto;
+        height: 450;
+        margin: 0px;
+    }
+    .cardTitle{
+        padding-top: 4%;
+        text-transform: uppercase;
+        font-size: 40px;
+    }
+    .cardTitle>h3{
+        font-size: 30px;
+    }
+    .cardText{
+        width: 80%;
+        font-size: 20px;
+    }
+    /* DESCARGAS */
+    #descargas h2{
+        padding-top: 20%;
+        font-size: 62px;
+        width: 80%;
+    }
+    .img-appstore img{
+        padding-top: 6%;
+        width: 35%;
+    }
+}
