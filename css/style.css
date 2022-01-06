@@ -46,17 +46,24 @@ nav{
 
 /* SOCIAL */
 #social{
-    z-index: 200;
     display: flex;
     position: fixed;
     bottom: 30px;
     width: 20%;
     left: 10%;
+    z-index: 999;
 }
-#social>ion-icon{
+#social>a{
     font-size: 40px;
+    cursor: pointer;
     padding-right: 8%;
+    color: white;
 }
+#social>a:hover{
+    cursor: pointer;
+    color: #f02d3a;
+}
+
 
 
 
